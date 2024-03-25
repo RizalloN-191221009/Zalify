@@ -26,7 +26,7 @@ const AuthModal = () => {
       onClose();
     }
   }, [session, router, onClose]);
-
+  
   const onChange = (open: boolean) => {
     if (!open) {
       onClose();
@@ -35,15 +35,15 @@ const AuthModal = () => {
 
   return (
     <Modal 
-      title="Welcome back" 
-      description="Login to your account." 
+      title="Zalify" 
+      description="Enjoy The Songs." 
       isOpen={isOpen} 
       onChange={onChange} 
     >
       <Auth
         supabaseClient={supabaseClient}
-        providers={['google']}
-        magicLink={true}
+        providers={['github']}
+        magicLink={false}
         appearance={{
           theme: ThemeSupa,
           variables: {

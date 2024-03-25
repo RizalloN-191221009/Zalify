@@ -55,7 +55,7 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
           gap-y-2 
           bg-black 
           h-full 
-          w-[450px] 
+          w-[300px] 
           p-2
           mt-2
         "
